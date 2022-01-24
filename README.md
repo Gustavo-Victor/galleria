@@ -23,7 +23,7 @@
     <a href='#-features'>• Features</a>    
     <a href='#-learnings'>• Learnings</a>
     <a href='#-author'>• Author</a>  
-    <a href='#-show-your-support'>• Show Your Support</a>
+    <a href='#show-your-support'>• Show Your Support</a>
     <a href='#-license'>• Licence</a>    
 </p>
 
