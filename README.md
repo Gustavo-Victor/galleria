@@ -42,9 +42,10 @@ The project was customized by me, but it was based on a youtube tutorial from th
 ![img](./img/screenshots/screenshot2.png)
 
 ### Mobile 
-![img](./img/screenshots/screenshot3.png)
 ![img](./img/screenshots/screenshot4.png)
 ![img](./img/screenshots/screenshot5.png)
+![img](./img/screenshots/screenshot3.png)
+
 
 ![img](./src/img/screenshots/screenshot9.png)
 
