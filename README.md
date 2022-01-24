@@ -17,14 +17,14 @@
 > Simple image gallery page using sass
 
 <p align='center'>
-    <a href='#about-the-project'>• About the project</a>  
-    <a href='#screenshots'>• Screenshots</a>  
-    <a href='#how-to-use'>• How to Use</a>  
-    <a href='#features'>• Features</a>    
-    <a href='#learnings'>• Learnings</a>
-    <a href='#author'>• Author</a>  
-    <a href='#show-your-support'>• Show Your Support</a>
-    <a href='#license'>• Licence</a>    
+    <a href='#-about-the-project'>• About the project</a>  
+    <a href='#-screenshots'>• Screenshots</a>  
+    <a href='#-how-to-use'>• How to Use</a>  
+    <a href='#-features'>• Features</a>    
+    <a href='#-learnings'>• Learnings</a>
+    <a href='#-author'>• Author</a>  
+    <a href='#-show-your-support'>• Show Your Support</a>
+    <a href='#-license'>• Licence</a>    
 </p>
 
 <p align='center'>🚀Project Completed ✅ </p>
