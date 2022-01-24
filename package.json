@@ -1,0 +1,13 @@
+{
+  "name": "galleria",
+  "version": "1.0.0",
+  "description": "Simple image gallery page using sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/style.sass:css/style.css"
+  },
+  "keywords": ["SASS", "HTML", "CSS", "JS", "Web Development", "Website", "Front-end"],
+  "author": "Gustavo Souza",
+  "license": "ISC"
+}

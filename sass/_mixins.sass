@@ -1,0 +1,32 @@
+@use 'variables'
+    
+@mixin container
+    max-width: variables.$container-width 
+    padding: 1.5rem 0
+    margin: 0 auto 
+
+@mixin flex-center 
+    display: flex 
+    align-items: center 
+    justify-content: center 
+
+@mixin bg-image($img) 
+    background-image: url('../img/#{$img}')
+    background-size: 100% 
+    background-position: center 
+    background-repeat: no-repeat
+    filter: grayscale(100%)
+    transition: .4s 
+
+    &:hover 
+        filter: grayscale(0%)
+        background-size: 105%
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url('../img/#{$img}')
+
+@mixin smallerMobile
+    @media (max-width: 576px)
+        @content 
+
+@mixin largerMobile
+    @media (max-width: 768px)
+        @content

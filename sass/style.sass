@@ -1,0 +1,192 @@
+/* use and import */
+@use 'variables'
+@use 'mixins'
+@import 'reset'
+
+/*header*/
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  @include mixins.container
+  z-index: 5
+  padding: 1.5rem
+
+  #bars-button 
+      cursor: pointer 
+      color: variables.$primary-color
+      font-size: 1.1rem
+      transition: .4s 
+      display: none
+
+      &:hover 
+          color: variables.$secondary-color
+
+  &-brand // .header-brand
+    color: variables.$primary-color
+    font-size: 3rem
+
+  &-navbar // .header-navbar
+    ul
+      @include mixins.flex-center
+      height: 100%
+      gap: 1rem 
+
+      // @include mixins.mobile-cellphone         
+      //   visibility: hidden
+      //   opacity: 0
+
+      li        
+        text-transform: uppercase
+        font-size: .8rem
+
+        .active
+          color: variables.$secondary-color
+
+        a
+          &:hover
+            color: variables.$secondary-color
+
+  &-social-media
+    ul
+      @include mixins.flex-center
+      height: 100%
+
+      // @include mixins.mobile-cellphone        
+      //   visibility: hidden
+      //   opacity: 0
+
+      li
+        margin: 0 1rem
+        a
+
+          &:hover
+            color: variables.$primary-color
+       
+  //header - larger mobile     
+  @include mixins.largerMobile         
+    padding: 1rem 1.5rem
+
+    #bars-button 
+      display: inline-block
+ 
+    &-navbar, &-social-media
+      display: none 
+
+    &.active
+      position: relative    
+
+      nav 
+        width: 100%   
+        display: block 
+        position: absolute
+        top: 5rem 
+        left: 0rem 
+        background-color: variables.$bg-color   
+        padding: 1rem 0 5rem 0   
+
+        ul 
+          width: 100%
+          @include mixins.flex-center 
+          flex-direction: column 
+
+      div.header-social-media 
+        width: 100%
+        display: block 
+        position: absolute
+        left: 0rem 
+        top: 16.4rem
+
+
+/*main gallery*/
+.gallery 
+  @include mixins.flex-center 
+  @include mixins.container  
+  flex-wrap: wrap 
+  justify-content: center
+  gap: 3%
+  padding: 0 1rem 
+  z-index: -1
+        
+  &-card //.gallery-card 
+    width: 30% 
+    height: 400px 
+    margin-bottom: 3% 
+    @include mixins.flex-center 
+    flex-direction: column 
+    color: variables.$primary-color
+
+    &-title 
+      font-size: 2rem 
+      font-weight: 300 
+      margin-bottom: 1rem 
+
+    &-btn 
+      padding: .6rem 2rem  
+      border: 2px solid variables.$primary-color 
+      color: variables.$primary-color
+      font-weight: 400 
+      text-transform: uppercase 
+      letter-spacing: 1px 
+
+      &:hover 
+        background-color: variables.$primary-color 
+        color: variables.$bg-color
+    
+  #card-1  
+    @include mixins.bg-image('animais.jpg')
+
+  #card-2
+    @include mixins.bg-image('arquitetura.jpg')
+
+  #card-3
+    @include mixins.bg-image('cidade.jpg')
+
+  #card-4
+    @include mixins.bg-image('decoracao.jpg')
+
+  #card-5
+    @include mixins.bg-image('esportes.jpg')
+
+  #card-6
+    @include mixins.bg-image('natureza.jpg')
+
+  #card-7
+    @include mixins.bg-image('paisagem.jpg')
+
+  #card-8
+    @include mixins.bg-image('pessoas.jpg')
+  
+  #card-9
+    @include mixins.bg-image('refeicoes.jpg')
+
+  //gallery - larger mobile 
+  @include mixins.largerMobile
+    justify-content: center 
+    align-items: center    
+
+    &-card
+      width: 47%
+      margin-bottom: 5%     
+
+  //gallery - smaller mobile  
+  @include mixins.smallerMobile
+    gap: 0
+
+    &-card
+      width: 100% 
+
+
+/*footer*/ 
+footer 
+  padding-bottom: 2rem 
+  text-align: center    
+
+  span 
+    font-weight: bold 
+    color: variables.$secondary-color
+
+  //footer - smaller mobile 
+  @include mixins.largerMobile
+    padding-top: 1rem 
+
