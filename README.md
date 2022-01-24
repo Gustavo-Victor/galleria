@@ -47,11 +47,6 @@ The project was customized by me, but it was based on a youtube tutorial from th
 ![img](./img/screenshots/screenshot3.png)
 
 
-![img](./src/img/screenshots/screenshot9.png)
-
-**[website hosted on Github Pages](https://gustavo-victor.github.io/imovi/#) 
-
-
 ## 🚀 How to Use
 
 Before you start, you will need to install [Git](https://git-scm.com/) and also a powerful code editor like [Visual Studio Code](https://code.visualstudio.com/) to clone, test and modify this repository on your machine. To understand the code, you need to have basic knowledge of HTML, CSS, and SASS.
